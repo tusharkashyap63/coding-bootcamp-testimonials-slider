@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: url(../images/pattern-bg.svg) 88% 5%,
+    url(../images/pattern-curve.svg) 0 85%;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  margin: 80px auto;
+  max-width: 1100px;
+
+  background: url(../images/pattern-quotes.svg) 15% 25%;
+  background-repeat: no-repeat;
+}
+.written {
+  flex: 1;
+  margin: auto 0px;
+  position: relative;
+  left: 65px;
+  max-width: 550px;
+  z-index: 2;
+}
+.mainPart {
+  font-size: 140%;
+  font-weight: 500;
+  line-height: 1.7;
+  color: hsl(240, 38%, 20%);
+}
+.name {
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+}
+.designation {
+  color: hsl(240, 18%, 77%);
+  margin-left: 3px;
+}
+.image {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 2px 2px 6px -4px rgba(71, 33, 71, 1);
+}
+.btnGrp {
+  display: flex;
+  position: absolute;
+  bottom: -4%;
+  left: 13%;
+  box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+}
+.slider-left,
+.slider-right {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.slider-left {
+  background-image: url(../images/icon-prev.svg);
+  border-radius: 50% 0 0 50%;
+}
+.slider-right {
+  background-image: url(../images/icon-next.svg);
+  border-radius: 0 50% 50% 0;
+}
