@@ -1,4 +1,8 @@
-let sliderButtons = document.querySelectorAll('[data-slider]');
-sliderButtons.forEach((button) => button.addEventListener('click', next));
+var mySwiper = new Swiper('.swiper-container', {
+  speed: 600,
 
-function next() {}
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
